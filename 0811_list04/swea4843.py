@@ -87,3 +87,5 @@ for tc in range(1,T+1):
             li += b.pop(0)
         print(f'{li}', end=' ')
     print()
+
+# *li 하면 리스트 벗겨져서 나옴
