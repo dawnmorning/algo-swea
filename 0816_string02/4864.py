@@ -9,3 +9,9 @@ for tc in range(1,t+1):
         if str_1[:] == str_2[i:i+len(str_1)]:
             cnt = 1
     print(f'#{tc} {cnt}')
+
+t = int(input())
+for tc in range(1, t+1):
+    n = input()
+    m = input()
+    print(f'#{tc} {int(n in m)}')
