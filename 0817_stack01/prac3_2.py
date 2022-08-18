@@ -35,6 +35,7 @@ sys.stdin = open('prac3.txt')
 V = 7 # 정점의 개수
 #모든 경로를 받기
 edge_list = list(map(int, input().split(', ')))
+# print(edge_list)
 E = len(edge_list)//2 #간선의 개수
 
 #인접 정점 (인접행렬로 만들기) 이차원배열로 나타내기
