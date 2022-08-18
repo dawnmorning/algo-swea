@@ -1,11 +1,9 @@
-adjlist = [[1, 2], [0, 3, 4], [0, 4], [1, 5], [1, 2, 5], [3, 4, 6], [5]]  # 0번째에 1,2 1번째에 0,3,4 위치 인접!!!
-
-
 def dfs(v, N):
     visited = [0] * N  # visited 생성
     stack = [0] * N  # stack 생성
     top = -1
     visited[v] = 1  # 시작점 방문 표시
+    print(v)
     while True:
         for w in adjlist[v]:  # if ( v의 인접 정점 중 방문 안 한 정점 w가 있으면)
             if visited[w] == 0:
