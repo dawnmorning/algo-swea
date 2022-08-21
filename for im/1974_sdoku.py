@@ -7,7 +7,7 @@ m = 3
 for tc in range(1, t+1):
     sdoku = [list(map(int,input().split()))for _ in range(9)]
     cnt = 0
-    # 가로
+    # 가로세로
     for i in range(9):
         now_multi_row = 1
         now_multi_col = 1
