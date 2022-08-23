@@ -1,6 +1,6 @@
 def step1(inOrder):
-    isp = {'+' :1, '*':2, '(':0}
-    icp = {'+' :1, '*':2, '(':3}
+    isp = {'+' :1, '-':1, '/': 2 ,'*':2, '(':0, ')':4}
+    icp = {'+' :1, '-':1, '/': 2 ,'*':2, '(':3, ')':4}
     order = {'+' :1, '*':2 }
     st = []
     postOrder = []
@@ -12,9 +12,9 @@ def step1(inOrder):
         #         postOrder.append(st.pop())
         else:
             #왼쪽 괄호가 있는 경우
-            # while len(st) > 0 and isp[st[-1]] >= icp[token]
+            while len(st) > 0 and isp[st[-1]] >= icp[token]
             # if 스택에 있는 거랑 token이랑 우선순위를 생각
-            while len(st) > 0 and order[st[-1]] >= order[token]:
+            # while len(st) > 0 and order[st[-1]] >= order[token]:
                 postOrder.append(st.pop())
             st.append(token)
     while st:
