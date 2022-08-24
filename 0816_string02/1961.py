@@ -4,6 +4,7 @@ t = int(input())
 for tc in range(t):
     n = int(input())
     arr = [list(map(int, input().split())) for _ in range(n)]
+    print(arr)
     arr_90 = [[0 for _ in range(n)] for _ in range(n)]
     arr_180 = [[0 for _ in range(n)] for _ in range(n)]
     arr_270 = [[0 for _ in range(n)] for _ in range(n)]
