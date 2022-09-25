@@ -21,8 +21,8 @@
 
 #교수님 ver
 
-import sys
-sys.stdin = open('1210 ladder.txt')
+# import sys
+# sys.stdin = open('1210 ladder.txt')
 for _ in range(10):
     tc = input()
     # 사다리의 2차원 배열을 받아올 필요가 있음

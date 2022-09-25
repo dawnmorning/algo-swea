@@ -1,5 +1,5 @@
-import sys
-sys.stdin = open('input.txt')
+# import sys
+# sys.stdin = open('input.txt')
 
 for tc in range(1,11): #문제의 개수
     cnt = int(input()) #빌딩 수

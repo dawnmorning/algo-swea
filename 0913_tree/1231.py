@@ -17,3 +17,11 @@ for tc in range(1, t+1):
     print(f'#{tc}', end = ' ')
     inorder(1)
     print()
+
+
+
+# v = int(input())
+# list = [0] * (v+1)
+# for i in range(v):
+#     pot = list(input().split())
+#     list[i+1] = pot[1]
