@@ -16,8 +16,8 @@
 #                 sumC = value[j][i]
 
 
-import sys
-sys.stdin = open('input (1).txt')
+# import sys
+# sys.stdin = open('input (1).txt')
 n = input()
 numbers = []
 for _ in range(100):
