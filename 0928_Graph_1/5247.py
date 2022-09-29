@@ -1,7 +1,8 @@
 import sys
 sys.stdin = open('5247.txt')
 from collections import deque
-def bfs(s,m):
+def bfs(s):
+    global m
     q = deque([s])
     visited = [0] * 1000001
     visited[s] = 0
@@ -16,9 +17,8 @@ def bfs(s,m):
                 q.append(i)
                 visited[i] = visited[s] + 1
 
-
 t = int(input())
 for tc in range(1, t+1):
     n, m = map(int, input().split())
-    res = bfs(n,m)
+    res = bfs(n)
     print(f'#{tc} {res}')
