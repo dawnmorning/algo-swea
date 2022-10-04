@@ -1,6 +1,3 @@
-
-
-
 def dfs(start):
     stack = []
     visited[start] = 1

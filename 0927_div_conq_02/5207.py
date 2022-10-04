@@ -1,25 +1,51 @@
-import sys
+# import sys
 # sys.stdin = open('5207.txt')
+# t = int(input())
+# for tc in range(1, t+1):
+#     n, m = map(int, input().split())
+#     A = sorted(list(map(int, input().split())))
+#     B = list(map(int, input().split()))
+#
+#     cnt = 0
+#     for number in B:
+#         low = 0
+#         high = n-1
+#         flag = None
+#         while low <= high:
+#             mid = (low + high) // 2
+#             if A[mid] == number:
+#                 cnt += 1
+#                 break
+#             elif A[mid] > number and flag != 'l':
+#                 high = mid - 1
+#                 flag = 'l'
+#             elif A[mid] < number and flag != 'r' :
+#                 low = mid + 1
+#                 flag = 'r'
+#             else:
+#                 break
+#     print(f'#{tc} {cnt}')
+import sys
+sys.stdin = open('5207.txt')
 t = int(input())
-for tc in range(1, t+1):
-    n, m = map(int, input().split())
-    A = sorted(list(map(int, input().split())))
+for tc in range(1 , t+1):
+    n, m  = map(int, input().split())
+    A = list(map(int, input().split()))
     B = list(map(int, input().split()))
-
     cnt = 0
-    for number in B:
-        low = 0
-        high = n-1
+    for i in B:
+        left = 0
+        right = n - 1
         flag = None
-        while low <= high:
-            mid = (low + high) // 2
-            if A[mid] == number:
+        while left <= right:
+            mid = (left + right) // 2
+            if A[mid] == i :
                 cnt += 1
                 break
-            elif A[mid] > number and flag != 'l':
+            elif A[mid] > i and flag != 'l':
                 high = mid - 1
-                flag = 'l'
-            elif A[mid] < number and flag != 'r' :
+                flag= 'l'
+            elif A[mid]< i and flag != 'r':
                 low = mid + 1
                 flag = 'r'
             else:
