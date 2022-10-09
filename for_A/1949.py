@@ -32,7 +32,6 @@ for tc in range(1, t+1):
     n, K = map(int, input().split())
     maps = [list(map(int, input().split()))for _ in range(n)]
     maxh = 0
-    maxlist = []
     for i in range(n):
         for j in range(n):
             if maxh < maps[i][j]:
