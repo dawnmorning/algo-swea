@@ -43,8 +43,8 @@ def dfs(idx, mapss):
                             li.append(mapss[i][j])
                     for a in range(len(li)):
                         new_map[h-len(li)+a][j] = li[a]
-                check = 1
-            if check == 1:
+                flag = True
+            if flag == 1:
                 dfs(idx+1,new_map)
                 mapss = copy_maps
                 break
